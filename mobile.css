@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+nav{
+    display: flex;
+    /* border: 2px solid #ff0000; */
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    top: 0px;
+    /* position:sticky; */
+}
+#nav-logo{
+    margin: 0px 3px; 
+    height: 71px;
+    width: 75px; 
+}
+#nav-logo img{
+    height: 70px;
+    width: 75px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 30px;
+    
+}
+#navbar ul li{
+    list-style:none;
+    /* border: 2px solid white; */
+    font-size: 2rem; 
+    font-weight: bold;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(240, 227, 111);
+    display: block;
+    border-radius: 10px;
+    padding: 5px 25px;
+}
+#navbar ul li a:hover{
+    background-color: rgb(97, 230, 119);
+    color: rgb(55, 0, 182);
+}
+
+#home::before{
+    content: "";
+    background:url("img/bg3.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    width: 100vw;
+    height: 430px;
+    opacity: 0.4;
+    z-index: -1;
+}
+#home{
+    margin: 65px 178px;
+}
+
+#home h1{
+            text-align: center;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-size: 5rem;
+            color: rgb(0, 0, 0);
+            font-family: 'Pattaya', sans-serif;
+}
+#home p{
+    color: blue;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+    font-size: 2.5rem;
+    font-weight:bolder;
+}
+
+/* gaming era */
+
+#gaming h1{
+    text-align: center;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Pattaya', sans-serif;
+    font-size: 4.5rem;
+    color: rgb(0, 0, 0);
+    margin: 5px 0px
+}
+#gaming{
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+    /* border: 2px solid green; */
+}
+#gaming::before{
+    content: "";
+    background: url("img/bg4.jpg") no-repeat center center/cover;
+    width:100vw;
+    height: 990px;
+    position: absolute;
+    z-index: -1;
+}
+#game-photos{
+    display: flex;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#game-photos img{
+    height: 245px;
+    width: 401px;
+    margin: 20px 20px;
+    border: 3px solid red;
+    border-radius: 15px;
+
+}
+
+@media (max-width:1009px)
+{
+    nav{
+        flex-direction: column;
+        
+    }
+    #navbar ul{
+        flex-direction: column;
+    }
+    #home::before{
+        display: none;
+    }
+    #gaming::before{
+        display: none;
+    }
+    #home{
+       background-color: rgb(169 249 255);
+        margin: 0px 0px;
+        padding: 65px 178px;
+    }
+    #gaming{
+        background-color: rgb(231 135 255);
+    }
+    #gaming h1 {
+    font-size: 3.5rem;
+    margin: 0px 0px;
+    padding: 3px 17px;
+    }
+}
+@media (max-width:738px){
+    #home h1 {
+        font-size: 3rem;
+    }
+    #home p {
+        font-size: 1.5rem;
+    }
+    #gaming h1 {
+        font-size: 2.5rem;
+        margin: 0px 0px;
+        padding: 3px 17px;
+    }
+}
+@media (max-width:568px){
+    #home {
+        margin: 0px 0px;
+        padding: 10px 17px;
+    }
+    #home h1 {
+        font-size: 2rem;
+    }
+    #home p {
+        font-size: 1.5rem;
+    }
+    #gaming h1 {
+        font-size: 2rem;
+        margin: 0px 0px;
+        padding: 3px 17px;
+    }
+    #game-photos img{
+        height: 200px;
+        width: 260px;
+        margin: 15px 15px;
+        border: 3px solid red;
+        border-radius: 15px;
+    
+    }
+    #navbar ul li{
+        font-size: 1.5rem;
+    
+    }
+}
