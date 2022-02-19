@@ -1,1 +1,1 @@
-https://akshay2002singh.github.io/trying_responsive_design/Index.html
+# https://akshay2002singh.github.io/responsive_design/Index.html
